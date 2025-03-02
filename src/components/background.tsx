@@ -4,7 +4,7 @@ import { Star } from "./star";
 import { useEffect } from "react";
 import { ShootingStar } from "./shooting-star";
 
-let stars = Array.from({length:300},(_,i) => i);
+const stars = Array.from({length:300},(_,i) => i);
 
 export const Background = () => {
     const [width,setWidth] = useState(0);
