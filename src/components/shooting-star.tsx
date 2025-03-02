@@ -1,15 +1,7 @@
 "use client"
-import {motion} from "framer-motion"
-import { useEffect, useState } from "react"
 
 
 export const ShootingStar = () => {
-    let yPos =  -100;
-    const [xPos,setXPos] = useState(0);
-    useEffect(()=>{
-        let width = window.innerWidth * 0.75;
-        setXPos(width);
-    },[])
     return <svg 
         className="absolute shoot h-[5px]"
         style={{

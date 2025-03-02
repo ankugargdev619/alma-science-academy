@@ -26,7 +26,7 @@ export const LoaderLogo = ()=>{
     const [isAnimating,setIsAnimating] = useState(true);
     const delay = 50;
     useEffect(()=> {
-        let text = texts[textIndex];
+        const text = texts[textIndex];
         let timeout;
         if(!isRemoving && displayedText.length < text.length){
             timeout = setTimeout(()=>{
