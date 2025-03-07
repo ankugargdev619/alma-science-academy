@@ -20,11 +20,32 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.w-inherit {
+  width: inherit;
+}
+
 .shoot {
   top : 0px;
   left : 50vw;
   opacity : 0;
   animation : shooting 10s 5s infinite linear;
+}
+
+.scroller {
+  overflow: hidden;
+  -webkit-mask : linear-gradient(90deg,transparent, white 20%, white 80%,transparent);
+}
+
+.scroller-inner{
+  transition: all 0.3s ease;
+  animation: scroll 20s linear infinite ;
+}
+
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%)
+  }
 }
 
 @keyframes shooting {
