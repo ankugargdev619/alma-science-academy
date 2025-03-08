@@ -22,7 +22,7 @@ export default function Home() {
   return <> {!isLoading ? (
               <div className="relative w-inherit">
                   <Header />
-                  <div className="absolute px-12 w-inherit top-24 md:top-16 -z-10">
+                  <div className="absolute px-2 md:px-12 w-inherit top-24 md:top-16 -z-10">
                     <Hero />
                     <Features />
                     <StudentsSection />
