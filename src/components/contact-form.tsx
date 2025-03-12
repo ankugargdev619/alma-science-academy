@@ -36,7 +36,7 @@ export const ContactForm = () => {
         }
 
         try {
-            let response = await fetch(process.env.NEXT_PUBLIC_SHEET_API as string,{
+            const response = await fetch(process.env.NEXT_PUBLIC_SHEET_API as string,{
                 redirect : "follow",
                 method : "POST",
                 headers: {
@@ -45,7 +45,7 @@ export const ContactForm = () => {
                 body : JSON.stringify(payload)
             })
 
-            let result = await response.json();
+            const result = await response.json();
             if(result.status === "Success") {
                 setFormData({...formData,message : `The form has been submitted successfully!` , name : "" , phone : "" , question : ""});
             } else {
