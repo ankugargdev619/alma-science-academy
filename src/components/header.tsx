@@ -14,8 +14,9 @@ export const Header = ()=>{
     }
     return <div className="z-[10000] sticky top-10 overflow-hidden rounded-lg w-inherit">
         <AnimatePresence>
-            <div className="py-4 backdrop-blur-lg backdrop-filter h-full rounded-lg">
-                <div className="flex justify-between gap-10 mx-10">
+            <div className="relative backdrop-blur-lg backdrop-filter h-full rounded-lg">
+                <div className="absolute bg-black opacity-20 w-full h-full" />
+                <div className="my-4 flex justify-between gap-10 mx-10">
                     <Logo scale={75} />
                     <div className="hidden md:flex justify-end md:gap-8 lg:gap-16 items-center">
                         <Link href={"/"}>Home </Link>
