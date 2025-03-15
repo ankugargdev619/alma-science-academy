@@ -15,8 +15,8 @@ export const Header = ()=>{
     return <div className="z-[10000] sticky top-10 overflow-hidden rounded-lg w-inherit">
         <AnimatePresence>
             <div className="relative backdrop-blur-lg backdrop-filter h-full rounded-lg">
-                <div className="absolute bg-black opacity-20 w-full h-full" />
-                <div className="my-4 flex justify-between gap-10 mx-10">
+                {/*<div className="absolute bg-black opacity-20 w-full h-full" />*/}
+                <div className="z-[11000] my-4 flex justify-between gap-10 mx-10">
                     <Logo scale={75} />
                     <div className="hidden md:flex justify-end md:gap-8 lg:gap-16 items-center">
                         <Link href={"/"}>Home </Link>
@@ -24,7 +24,6 @@ export const Header = ()=>{
                         <Link href={"/about-us"}>About Us</Link>
                         <Link href={"/contact-us"}>Contact Us</Link>
                         <Link href={"/resources"}>Resources</Link>
-                        
                     </div>
                     <motion.div 
                         animate = {isOpen ? 'open' : 'close'}
