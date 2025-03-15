@@ -12,10 +12,10 @@ export const Header = ()=>{
     function handleLinkClick(){
         setIsOpen(false);
     }
-    return <div className="z-[10000] sticky top-10 overflow-hidden rounded-lg w-inherit">
+    return <div className="z-[10000] sticky top-0 overflow-hidden rounded-lg w-inherit">
         <AnimatePresence>
             <div className="relative backdrop-blur-lg backdrop-filter h-full rounded-lg">
-                {/*<div className="absolute bg-black opacity-20 w-full h-full" />*/}
+                <div className="-z-[1000] absolute bg-black opacity-20 w-full h-full" />
                 <div className="z-[11000] my-4 flex justify-between gap-10 mx-10">
                     <Logo scale={75} />
                     <div className="hidden md:flex justify-end md:gap-8 lg:gap-16 items-center">
